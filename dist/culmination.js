@@ -1,0 +1,1 @@
+!function(){angular.module("ffballDraftRanker",["ui.router","ngAnimate"])}(),function(){angular.module("ffballDraftRanker").config()}();

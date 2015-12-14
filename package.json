@@ -1,0 +1,33 @@
+{
+  "name": "ffball-draft-ranker",
+  "version": "1.0.0",
+  "description": "Custom fantasy football draft rankings",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "grunt": "^0.4.5",
+    "grunt-html-build": "^0.5.2",
+    "grunt-karma": "^0.12.1",
+    "karma": "^0.13.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudolife/ffball-draft-ranker.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "NodeJS",
+    "MongoDB"
+  ],
+  "author": "Brian Thompson",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sudolife/ffball-draft-ranker/issues"
+  },
+  "homepage": "https://github.com/sudolife/ffball-draft-ranker#readme"
+}

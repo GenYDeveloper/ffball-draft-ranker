@@ -1,0 +1,30 @@
+{
+  "name": "ffball-draft-ranker",
+  "description": "Custom fantasy football draft player rankings",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "AngularJS",
+    "NodeJS",
+    "and",
+    "MongoDB"
+  ],
+  "authors": [
+    "Brian Thompson"
+  ],
+  "license": "none",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.4.8"
+  }
+}

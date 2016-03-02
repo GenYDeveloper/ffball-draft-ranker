@@ -14,8 +14,10 @@ var gulp = require('gulp'),
    exclude = require('gulp-exclude-gitignore'),
    ejs = require('gulp-ejs'),
    copy = require('gulp-copy'),
-   bower = require('gulp-bower'),
-   myth = require('gulp-myth'); // used instead of gulp-sass for now
+   bower = require('main-bower-files'),
+   myth = require('gulp-myth'),
+   clean = require('gulp-clean'),
+   runSequence = require('gulp-run-sequence'); // used instead of gulp-sass for now
 
 gulp.task('styles', function() {
    return gulp.src('client/vendors/styles/*.css')
@@ -31,6 +33,17 @@ gulp.task('scripts', function() {
       .pipe(concat('culmination.js'))
       .pipe(uglify())
       .pipe(gulp.dest('dist'));
+});
+
+gulp.task('clean:dist', function() {
+   return gulp.src('dist', {read:false})
+      .pipe(clean());
+});
+
+gulp.task('copy:mainBowerFiles', function() {
+   return gulp.src(bower())
+      .pipe(clean('client/vendor'))
+      .pipe(gulp.dest('client/vendor'));
 });
 
 gulp.task('watch', function() {

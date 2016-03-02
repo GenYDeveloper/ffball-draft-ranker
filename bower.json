@@ -21,10 +21,17 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
+  "dependencies": {
+    "lodash": "^4.6.1",
     "angular": "~1.4.8",
     "bootstrap": "~3.3.6",
     "angular-ui-router": "~0.2.15",
     "angular-animate": "~1.4.8"
+  },
+  "devDependencies": {  },
+  "overrides": {
+    "bootstrap": [
+      "dist/**/*.js"
+    ]
   }
 }
